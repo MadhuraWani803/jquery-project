@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+  background-color: aquamarine;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: pink;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+.note{
+    background-color: coral;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+ 
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js">
+    </script>
+ 
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+    </script>
+</head> 
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>This is an example of mobile JQuery</h1>
+  <h3>Resize the browser window to see the results</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Before you start studying jQuery, you should have a basic knowledge of:</div>
+    <div class="menuitem">HTML</div>
+    <div class="menuitem">CSS</div>
+    <div class="menuitem">JavaScript</div>
+  </div>
+
+  <div class="main">
+    <h2>What is jQuery?</h2>
+    <p>jQuery is a lightweight, "write less, do more", JavaScript library.
+
+        The purpose of jQuery is to make it much easier to use JavaScript on your website.
+        
+        jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.</p>
+    <img src="img1.jpg" style="width:70%">
+  </div>
+
+  <div class="right">
+    <h2>The jQuery library contains the following features:</h2>
+    <p>HTML/DOM manipulation
+        CSS manipulation
+        HTML event methods
+        Effects and animations
+        AJAX
+        Utilities
+    </p>
+    <h2>Why jQuery?</h2>
+    <p>There are lots of other JavaScript libraries out there, but jQuery is probably the most popular, and also the most extendable.</p>
+    <h3>Many of the biggest companies on the Web use jQuery, such as: Google
+        Microsoft
+        IBM
+        Netflix</h3>
+  </div>
+</div>
+
+<p class="note"><b>Will jQuery work in all browsers? <br>
+
+    The jQuery team knows all about cross-browser issues, and they have written this knowledge into the jQuery library. jQuery will run exactly the same in all major browsers.</b></p>
+
+</body>
+</html>
+
